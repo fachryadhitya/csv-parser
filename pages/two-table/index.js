@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Home from "../components/Home";
-import MainScreen from "../components/MainScreen";
-import styles from "../styles/Home.module.css";
+import Home from "../../components/Home";
+import SecondScreen from "../../components/SecondScreen";
 
 export default function Index() {
   return (
@@ -12,7 +11,7 @@ export default function Index() {
       </Head>
 
       <Home>
-        <MainScreen />
+        <SecondScreen />
       </Home>
     </div>
   );

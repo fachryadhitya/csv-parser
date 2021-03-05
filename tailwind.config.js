@@ -9,11 +9,11 @@ module.exports = {
 
     extend: {
       colors: {
-        "red-primary": "#e63946",
-        "white-primary": "#f1faee",
-        "light-blue-primary": "#a8dadc",
-        "blue-primary": "#457b9d",
-        "dark-blue-primary": "#1d3557",
+        peach: "#ffd6ba",
+        "white-primary": "#faf9f9",
+        "light-green-primary": "#bee3db",
+        "green-primary": "#89b0ae",
+        "dark-grey-primary": "#555b6e",
       },
     },
   },
