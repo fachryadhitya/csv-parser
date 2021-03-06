@@ -11,7 +11,7 @@ export default function TableParser({
   const [file, setFile] = useState(undefined);
   const [dataArr, setDataArr] = useState([
     {
-      "Did I see this plant in 2016?": "No",
+      "Initial Data": "Initial Data",
       "Did I see this plant in 2017?": "Yes",
       "How Many?": 1,
       "User Data 4": "x",
@@ -61,7 +61,7 @@ export default function TableParser({
   });
 
   return (
-    <div className={styles || "w-full"}>
+    <div data-testid="table-parser" className={styles || "w-full"}>
       <input onChange={handleFileSelected} type="file" />
       <div className="mt-4 flex">
         <TableContainer

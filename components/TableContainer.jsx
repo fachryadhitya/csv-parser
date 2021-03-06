@@ -85,14 +85,18 @@ export default function TableContainer({
 
   return (
     <>
-      <div className="flex flex-col pl-0 max-w-full">
+      <div className="flex flex-col pl-0 max-w-full min-w-full">
         <div className="mb-4">
           <ModalButton body={<ColumnView />} />
         </div>
         <div {...getTableProps()} className={styles.table}>
           <div>
-            {headerGroups.map((headerGroup) => (
-              <div {...headerGroup.getHeaderGroupProps()} className={styles.tr}>
+            {headerGroups.map((headerGroup, i) => (
+              <div
+                key={i}
+                {...headerGroup.getHeaderGroupProps()}
+                className={styles.tr}
+              >
                 {headerGroup.headers.map((column) => (
                   <>
                     <div
